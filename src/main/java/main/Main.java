@@ -8,6 +8,7 @@ public class Main {
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
         var service = context.getBean(CommentService.class);
+        System.out.println(service.getClass());
 
         Comment comment = new Comment();
         comment.setText("Demo comment");
